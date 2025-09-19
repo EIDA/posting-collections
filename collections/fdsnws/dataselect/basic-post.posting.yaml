@@ -1,0 +1,12 @@
+name: Dataselect basic POST request
+method: POST
+url: http://${wsendpoint}/fdsnws/dataselect/1/query
+body:
+  content: |-
+    quality=B
+    ${net} ${sta} ${loc} ${cha} ${start} ${end}
+headers:
+  - name: User-Agent
+    value: Posting
+  - name: Content-Type
+    value: text/plain

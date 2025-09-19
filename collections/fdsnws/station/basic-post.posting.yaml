@@ -1,0 +1,12 @@
+name: Station basic POST request
+method: POST
+url: http://${wsendpoint}/fdsnws/station/1/query
+body:
+  content: |-
+    format=text
+    ${net} ${sta} ${loc} ${cha} ${start} ${end}
+headers:
+  - name: User-Agent
+    value: Posting
+  - name: Content-Type
+    value: text/plain

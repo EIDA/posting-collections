@@ -1,0 +1,18 @@
+name: Dataselect basic request
+url: http://${wsendpoint}/fdsnws/dataselect/1/query
+headers:
+  - name: User-Agent
+    value: Posting
+params:
+  - name: net
+    value: ${net}
+  - name: sta
+    value: ${sta}
+  - name: loc
+    value: ${loc}
+  - name: cha
+    value: ${cha}
+  - name: start
+    value: ${start}
+  - name: end
+    value: ${end}
