@@ -1,20 +1,20 @@
-name: Dataselect basic request
+name: Station basic request
 url: http://${wsendpoint}/fdsnws/station/1/query
 headers:
-- name: User-Agent
-  value: Posting
+  - name: User-Agent
+    value: Posting
 params:
-- name: net
-  value: ${net}
-- name: sta
-  value: ${sta}
-- name: loc
-  value: ${loc}
-- name: cha
-  value: ${cha}
-- name: start
-  value: ${start}
-- name: end
-  value: ${end}
-- name: format
-  value: text
+  - name: net
+    value: ${net}
+  - name: sta
+    value: ${sta}
+  - name: loc
+    value: ${loc}
+  - name: cha
+    value: ${cha}
+  - name: start
+    value: ${start}
+  - name: end
+    value: ${end}
+  - name: format
+    value: text
