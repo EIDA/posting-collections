@@ -1,5 +1,5 @@
-name: Station basic request
-url: https://${wsendpoint}/fdsnws/station/1/query
+name: Wfcatalog basic request
+url: http://${wsendpoint}/eidaws/wfcatalog/1/query
 headers:
 - name: User-Agent
   value: Posting
@@ -17,4 +17,6 @@ params:
 - name: end
   value: ${end}
 - name: format
-  value: text
+  value: json
+options:
+  timeout: 20.0

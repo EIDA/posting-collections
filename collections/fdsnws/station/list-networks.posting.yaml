@@ -1,4 +1,4 @@
-name: Station basic request
+name: List networks
 url: https://${wsendpoint}/fdsnws/station/1/query
 headers:
 - name: User-Agent
@@ -6,15 +6,23 @@ headers:
 params:
 - name: net
   value: ${net}
+  enabled: false
 - name: sta
   value: ${sta}
+  enabled: false
 - name: loc
   value: ${loc}
+  enabled: false
 - name: cha
   value: ${cha}
+  enabled: false
 - name: start
   value: ${start}
+  enabled: false
 - name: end
   value: ${end}
+  enabled: false
 - name: format
   value: text
+- name: level
+  value: network
